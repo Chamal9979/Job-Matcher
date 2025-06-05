@@ -14,8 +14,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-16 pb-16">
-      {/* Hero Section */}
+    <div className="flex flex-col items-center gap-12 pb-16 w-full min-h-screen p-8">
       <section className="relative pt-16 pb-20 md:pt-24 md:pb-32 overflow-hidden">
         <div className="container flex flex-col items-center text-center relative z-10">
           <Badge variant="outline" className="mb-4 px-4 py-1 text-sm">
@@ -48,18 +47,15 @@ export default function Home() {
             </p>
           </div>
         </div>
-        
+
         {/* Background decoration */}
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(45%_50%_at_50%_50%,hsl(var(--primary)/0.1)_0%,transparent_100%)]" />
       </section>
 
-      {/* How it works section */}
       <HowItWorks />
-      
-      {/* Featured jobs section */}
       <FeaturedJobs />
-      
-      {/* Testimonials/Stats Section */}
+
+      {/* Testimonials/Stats */}
       <section className="container py-12">
         <div className="rounded-2xl bg-muted/50 p-8 md:p-10 lg:p-12">
           <div className="flex flex-col items-center text-center mb-10">
